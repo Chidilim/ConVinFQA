@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated retrieval indexes and experiment tracking (rebuild with agent.ingest / agent.experiment)
+processed/index/
+processed/mlflow.db
+mlruns/
+mlartifacts/
+
+# Dataset: too large for git (train_turn.json is 159 MB; GitHub limit is 100 MB).
+# Download the ConvFinQA release into data/ locally.
+data/
+
+# Secrets
+.env
+
+# VS Code "Local History" extension snapshots (contain copies of .env!)
+.history/
