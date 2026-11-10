@@ -29,8 +29,10 @@ plan_calculation ──► calculate ──► eval ──right──► END
 
 | Path | What it is |
 |---|---|
-| `langchain_trial.py` | The agent graph, prompts, and a run over the first 15 training turns |
+| `agent/ai_agent_procedural_memory.py` | The agent with lesson memory: graph, prompts, and a run over the first 15 training turns |
+| `agent/base_agent.py` | Baseline agent without memory (planner + calculator only), kept for comparison |
 | `agent/table_format.py` | Cleans dataset tables and converts them to Markdown or row sentences |
+| `processed/lessons.json` | Lessons saved from the latest run |
 | `tests/` | pytest tests for the table formatter |
 | `docs/decisions.md` | Design decisions |
 
@@ -49,9 +51,12 @@ plan_calculation ──► calculate ──► eval ──right──► END
 
 ## Run
 
+Run from the repository root, as a module (`-m`), so `from agent.table_format import ...`
+and the `data/` and `processed/` paths resolve:
+
 ```bash
-python langchain_trial.py   # runs 15 examples (about 30-60 API calls)
-python -m pytest            # table formatter tests, no API calls
+python -m agent.ai_agent_procedural_memory   # runs 15 examples (about 30-60 API calls)
+python -m pytest                             # table formatter tests, no API calls
 ```
 
 Each example prints RIGHT or WRONG, the plan, and the answer next to the expected one.
