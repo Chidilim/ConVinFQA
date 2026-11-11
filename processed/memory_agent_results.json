@@ -1,0 +1,336 @@
+{
+  "agent": "procedural memory",
+  "num_examples": 20,
+  "correct": 16,
+  "errors": 1,
+  "accuracy": 0.8,
+  "examples": [
+    {
+      "index": 0,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 0,
+      "question": "what is the net cash from operating activities in 2009?",
+      "expected_program": "206588",
+      "expected_answer": 206588.0,
+      "agent_program": "206588",
+      "agent_answer": 206588.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 1,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 1,
+      "question": "what about in 2008?",
+      "expected_program": "181001",
+      "expected_answer": 181001.0,
+      "agent_program": "181001",
+      "agent_answer": 181001.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 2,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 2,
+      "question": "what is the difference?",
+      "expected_program": "subtract(206588, 181001)",
+      "expected_answer": 25587.0,
+      "agent_program": "subtract(206588, 181001)",
+      "agent_answer": 25587.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 3,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 3,
+      "question": "what percentage change does this represent?",
+      "expected_program": "subtract(206588, 181001), divide(#0, 181001)",
+      "expected_answer": 0.14136,
+      "agent_program": "subtract(206588, 181001), divide(#0, 181001)",
+      "agent_answer": 0.1413638598681775,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.626
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 4,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 0,
+      "question": "what were revenues in 2008?",
+      "expected_program": "9362.2",
+      "expected_answer": 9362.2,
+      "agent_program": "9362.2",
+      "agent_answer": 9362.2,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 5,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 1,
+      "question": "what were they in 2007?",
+      "expected_program": "9244.9",
+      "expected_answer": 9244.9,
+      "agent_program": "9244.9",
+      "agent_answer": 9244.9,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 6,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 2,
+      "question": "what was the net change?",
+      "expected_program": "subtract(9362.2, 9244.9)",
+      "expected_answer": 117.3,
+      "agent_program": "subtract(9362.2, 9244.9)",
+      "agent_answer": 117.30000000000109,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 7,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 3,
+      "question": "what is the percent change?",
+      "expected_program": "subtract(9362.2, 9244.9), divide(#0, 9244.9)",
+      "expected_answer": 0.01269,
+      "agent_program": "subtract(9362.2, 9244.9), divide(#0, 9244.9)",
+      "agent_answer": 0.012688076669298868,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.669
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 8,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 0,
+      "question": "what was the total of net sales in 2001?",
+      "expected_program": "5363",
+      "expected_answer": 5363.0,
+      "agent_program": "5363",
+      "agent_answer": 5363.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 9,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 1,
+      "question": "and what was that in 2000?",
+      "expected_program": "7983",
+      "expected_answer": 7983.0,
+      "agent_program": "7983",
+      "agent_answer": 7983.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 10,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 2,
+      "question": "what was, then, the change in the total of net sales over the year?",
+      "expected_program": "subtract(5363, 7983)",
+      "expected_answer": -2620.0,
+      "agent_program": "subtract(5363, 7983), divide(#0, 7983)",
+      "agent_answer": -0.3281974195164725,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 11,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 3,
+      "question": "and how much does this change represent in relation to that total in 2000, in percentage?",
+      "expected_program": "subtract(5363, 7983), divide(#0, 7983)",
+      "expected_answer": -0.3282,
+      "agent_program": "subtract(5363, 7983), divide(#0, 7983)",
+      "agent_answer": -0.3281974195164725,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "736d60b0-f62a-4f82-a292-b125ecf7782c",
+          "score": 0.558
+        },
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.504
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 12,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 0,
+      "question": "what was the change in the performance of the united parcel service inc . from 2004 to 2009?",
+      "expected_program": "subtract(75.95, const_100)",
+      "expected_answer": -24.05,
+      "agent_program": "subtract(75.95, 100), divide(#0, 100)",
+      "agent_answer": -0.24049999999999996,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 13,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 1,
+      "question": "and how much does this change represent in relation to that performance in 2004, in percentage?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100)",
+      "expected_answer": -0.2405,
+      "agent_program": "subtract(75.95, 100), divide(#0, 100)",
+      "agent_answer": -0.24049999999999996,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "1f469d53-e30c-41e8-9c14-5fbed7af63c0",
+          "score": 0.574
+        },
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.508
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 14,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 2,
+      "question": "what was the performance value of the s&p 500 index in 2009?",
+      "expected_program": "102.11",
+      "expected_answer": 102.11,
+      "agent_program": "102.11",
+      "agent_answer": 102.11,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 15,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 3,
+      "question": "what was, then, the change in that performance from 2004 to 2009?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100)",
+      "expected_answer": 2.11,
+      "agent_program": "subtract(102.11, 100)",
+      "agent_answer": 2.1099999999999994,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "1f469d53-e30c-41e8-9c14-5fbed7af63c0",
+          "score": 0.557
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 16,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 4,
+      "question": "and how much does this change represent in relation to that performance in 2004, in percentage?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100), divide(#2, const_100)",
+      "expected_answer": 0.0211,
+      "agent_program": "subtract(102.11, 100), divide(#0, 100)",
+      "agent_answer": 0.021099999999999994,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "1f469d53-e30c-41e8-9c14-5fbed7af63c0",
+          "score": 0.574
+        },
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.508
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 17,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 5,
+      "question": "what is, then, the difference between the percent representation of the united parcel service inc . and the s&p 500 index?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100), divide(#2, const_100), subtract(#1, #3)",
+      "expected_answer": -0.2616,
+      "agent_program": null,
+      "agent_answer": null,
+      "correct": false,
+      "error": "ValueError('Step 1 not available')",
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 18,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 0,
+      "question": "what was the fluctuation of the performance price of the ups from 2004 to 2006?",
+      "expected_program": "subtract(91.06, const_100)",
+      "expected_answer": -8.94,
+      "agent_program": "subtract(91.06, 100), divide(#0, 100)",
+      "agent_answer": -0.08939999999999998,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 19,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 1,
+      "question": "and how much does this fluctuation represent in relation to that price in 2004?",
+      "expected_program": "subtract(91.06, const_100), divide(#0, const_100)",
+      "expected_answer": -0.0894,
+      "agent_program": "subtract(91.06, 100), divide(#0, 100)",
+      "agent_answer": -0.08939999999999998,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "1844e036-20da-42f9-93ac-9b21ad856cbb",
+          "score": 0.508
+        }
+      ],
+      "lesson_status": null
+    }
+  ]
+}
