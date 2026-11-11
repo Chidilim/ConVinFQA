@@ -1,0 +1,1672 @@
+{
+  "agent": "procedural memory",
+  "split": "train",
+  "lessons_mode": "learn",
+  "run_id": "20261110-191021",
+  "num_examples": 101,
+  "correct": 71,
+  "errors": 3,
+  "accuracy": 0.7029702970297029,
+  "examples": [
+    {
+      "index": 0,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 0,
+      "question": "what is the net cash from operating activities in 2009?",
+      "expected_program": "206588",
+      "expected_answer": 206588.0,
+      "agent_program": "206588",
+      "agent_answer": 206588.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 1,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 1,
+      "question": "what about in 2008?",
+      "expected_program": "181001",
+      "expected_answer": 181001.0,
+      "agent_program": "181001",
+      "agent_answer": 181001.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 2,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 2,
+      "question": "what is the difference?",
+      "expected_program": "subtract(206588, 181001)",
+      "expected_answer": 25587.0,
+      "agent_program": "subtract(206588, 181001)",
+      "agent_answer": 25587.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 3,
+      "conversation_id": "Single_JKHY/2009/page_28.pdf-3",
+      "turn_index": 3,
+      "question": "what percentage change does this represent?",
+      "expected_program": "subtract(206588, 181001), divide(#0, 181001)",
+      "expected_answer": 0.14136,
+      "agent_program": "subtract(206588, 181001), divide(#0, 181001)",
+      "agent_answer": 0.1413638598681775,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.626
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 4,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 0,
+      "question": "what were revenues in 2008?",
+      "expected_program": "9362.2",
+      "expected_answer": 9362.2,
+      "agent_program": "9362.2",
+      "agent_answer": 9362.2,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 5,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 1,
+      "question": "what were they in 2007?",
+      "expected_program": "9244.9",
+      "expected_answer": 9244.9,
+      "agent_program": "9244.9",
+      "agent_answer": 9244.9,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 6,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 2,
+      "question": "what was the net change?",
+      "expected_program": "subtract(9362.2, 9244.9)",
+      "expected_answer": 117.3,
+      "agent_program": "subtract(9362.2, 9244.9)",
+      "agent_answer": 117.30000000000109,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 7,
+      "conversation_id": "Single_RSG/2008/page_114.pdf-2",
+      "turn_index": 3,
+      "question": "what is the percent change?",
+      "expected_program": "subtract(9362.2, 9244.9), divide(#0, 9244.9)",
+      "expected_answer": 0.01269,
+      "agent_program": "subtract(9362.2, 9244.9), divide(#0, 9244.9)",
+      "agent_answer": 0.012688076669298868,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.669
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 8,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 0,
+      "question": "what was the total of net sales in 2001?",
+      "expected_program": "5363",
+      "expected_answer": 5363.0,
+      "agent_program": "5363",
+      "agent_answer": 5363.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 9,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 1,
+      "question": "and what was that in 2000?",
+      "expected_program": "7983",
+      "expected_answer": 7983.0,
+      "agent_program": "7983",
+      "agent_answer": 7983.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 10,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 2,
+      "question": "what was, then, the change in the total of net sales over the year?",
+      "expected_program": "subtract(5363, 7983)",
+      "expected_answer": -2620.0,
+      "agent_program": "subtract(5363, 7983), divide(#0, 7983)",
+      "agent_answer": -0.3281974195164725,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 11,
+      "conversation_id": "Single_AAPL/2002/page_23.pdf-1",
+      "turn_index": 3,
+      "question": "and how much does this change represent in relation to that total in 2000, in percentage?",
+      "expected_program": "subtract(5363, 7983), divide(#0, 7983)",
+      "expected_answer": -0.3282,
+      "agent_program": "subtract(5363, 7983), divide(#0, 7983)",
+      "agent_answer": -0.3281974195164725,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.558
+        },
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.504
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 12,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 0,
+      "question": "what was the change in the performance of the united parcel service inc . from 2004 to 2009?",
+      "expected_program": "subtract(75.95, const_100)",
+      "expected_answer": -24.05,
+      "agent_program": "subtract(75.95, 100)",
+      "agent_answer": -24.049999999999997,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 13,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 1,
+      "question": "and how much does this change represent in relation to that performance in 2004, in percentage?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100)",
+      "expected_answer": -0.2405,
+      "agent_program": "subtract(75.95, 100), divide(#0, 100)",
+      "agent_answer": -0.24049999999999996,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.508
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 14,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 2,
+      "question": "what was the performance value of the s&p 500 index in 2009?",
+      "expected_program": "102.11",
+      "expected_answer": 102.11,
+      "agent_program": "102.11",
+      "agent_answer": 102.11,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 15,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 3,
+      "question": "what was, then, the change in that performance from 2004 to 2009?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100)",
+      "expected_answer": 2.11,
+      "agent_program": "-24.05",
+      "agent_answer": -24.05,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 16,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 4,
+      "question": "and how much does this change represent in relation to that performance in 2004, in percentage?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100), divide(#2, const_100)",
+      "expected_answer": 0.0211,
+      "agent_program": "subtract(102.11, 100), divide(#0, 100)",
+      "agent_answer": 0.021099999999999994,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.508
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 17,
+      "conversation_id": "Single_UPS/2009/page_33.pdf-2",
+      "turn_index": 5,
+      "question": "what is, then, the difference between the percent representation of the united parcel service inc . and the s&p 500 index?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100), divide(#2, const_100), subtract(#1, #3)",
+      "expected_answer": -0.2616,
+      "agent_program": null,
+      "agent_answer": null,
+      "correct": false,
+      "error": "ValueError('Step 1 not available')",
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 18,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 0,
+      "question": "what was the fluctuation of the performance price of the ups from 2004 to 2006?",
+      "expected_program": "subtract(91.06, const_100)",
+      "expected_answer": -8.94,
+      "agent_program": "subtract(91.06, 100), divide(#0, 100)",
+      "agent_answer": -0.08939999999999998,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 19,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 1,
+      "question": "and how much does this fluctuation represent in relation to that price in 2004?",
+      "expected_program": "subtract(91.06, const_100), divide(#0, const_100)",
+      "expected_answer": -0.0894,
+      "agent_program": "-8.94",
+      "agent_answer": -8.94,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.515
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 20,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 2,
+      "question": "and from this year to 2009, what was the fluctuation for that stock?",
+      "expected_program": "subtract(75.95, const_100)",
+      "expected_answer": -24.05,
+      "agent_program": "subtract(75.95, 91.06), divide(#0, 91.06)",
+      "agent_answer": -0.16593454864924226,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 21,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 3,
+      "question": "what is this fluctuation as a percentage of the 2004 price?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100)",
+      "expected_answer": -0.2405,
+      "agent_program": "subtract(75.95, 100), divide(#0, 100)",
+      "agent_answer": -0.24049999999999996,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.621
+        },
+        {
+          "key": "0879fa8e-9170-4c13-adde-30248de27a2a",
+          "score": 0.552
+        },
+        {
+          "key": "e58c3ea3-c10b-48e2-94ee-e37d8bed9382",
+          "score": 0.541
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 22,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 4,
+      "question": "and for the s&p 500 index price, what was the fluctuation in those five years?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100)",
+      "expected_answer": 2.11,
+      "agent_program": "subtract(102.11, 100), divide(#0, 100)",
+      "agent_answer": 0.021099999999999994,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "e58c3ea3-c10b-48e2-94ee-e37d8bed9382",
+          "score": 0.575
+        },
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.527
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 23,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 5,
+      "question": "and what percentage does this fluctuation represent in relation to the 2004 price of this stock?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100), divide(#2, const_100)",
+      "expected_answer": 0.0211,
+      "agent_program": "-0.24049999999999996",
+      "agent_answer": -0.24049999999999996,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "aea92e98-6e3a-4058-a7dc-f65722665ad6",
+          "score": 0.572
+        },
+        {
+          "key": "e58c3ea3-c10b-48e2-94ee-e37d8bed9382",
+          "score": 0.552
+        },
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.551
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 24,
+      "conversation_id": "Double_UPS/2009/page_33.pdf",
+      "turn_index": 6,
+      "question": "what is, then, the difference between the ups percentage and this s&p 500 index one, for this five year period?",
+      "expected_program": "subtract(75.95, const_100), divide(#0, const_100), subtract(102.11, const_100), divide(#2, const_100), subtract(#1, #3)",
+      "expected_answer": -0.2616,
+      "agent_program": null,
+      "agent_answer": null,
+      "correct": false,
+      "error": "ValueError('Step 5 not available')",
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 25,
+      "conversation_id": "Single_CE/2010/page_134.pdf-2",
+      "turn_index": 0,
+      "question": "how many shares are subject to outstanding awards is under the 2009 global incentive plan?",
+      "expected_program": "2530454",
+      "expected_answer": 2530454.0,
+      "agent_program": "2530454",
+      "agent_answer": 2530454.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 26,
+      "conversation_id": "Single_CE/2010/page_134.pdf-2",
+      "turn_index": 1,
+      "question": "what about under the 2004 stock incentive plan?",
+      "expected_program": "5923147",
+      "expected_answer": 5923147.0,
+      "agent_program": "5923147",
+      "agent_answer": 5923147.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 27,
+      "conversation_id": "Single_CE/2010/page_134.pdf-2",
+      "turn_index": 2,
+      "question": "how many total shares are subject to outstanding awards?",
+      "expected_program": "add(2530454, 5923147)",
+      "expected_answer": 8453601.0,
+      "agent_program": "8453601",
+      "agent_answer": 8453601.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 28,
+      "conversation_id": "Single_CE/2010/page_134.pdf-2",
+      "turn_index": 3,
+      "question": "what about under the 2004 stock incentive plan?",
+      "expected_program": "5923147",
+      "expected_answer": 5923147.0,
+      "agent_program": "5923147",
+      "agent_answer": 5923147.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 29,
+      "conversation_id": "Single_CE/2010/page_134.pdf-2",
+      "turn_index": 4,
+      "question": "what proportion does this represent?",
+      "expected_program": "add(2530454, 5923147), divide(5923147, #0)",
+      "expected_answer": 0.70067,
+      "agent_program": "add(2530454, 5923147), divide(2530454, #0)",
+      "agent_answer": 0.2993344493074608,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 30,
+      "conversation_id": "Single_JPM/2013/page_104.pdf-2",
+      "turn_index": 0,
+      "question": "what was the net change in value of litigation reserves during 2012?",
+      "expected_program": "subtract(3.7, 3.2)",
+      "expected_answer": 0.5,
+      "agent_program": "",
+      "agent_answer": null,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 31,
+      "conversation_id": "Single_JPM/2013/page_104.pdf-2",
+      "turn_index": 1,
+      "question": "what was the value of litigation reserves at the start of 2012?",
+      "expected_program": "3.2",
+      "expected_answer": 3.2,
+      "agent_program": "",
+      "agent_answer": null,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 32,
+      "conversation_id": "Single_JPM/2013/page_104.pdf-2",
+      "turn_index": 2,
+      "question": "what was the percent change?",
+      "expected_program": "subtract(3.7, 3.2), divide(#0, 3.2)",
+      "expected_answer": 0.15625,
+      "agent_program": "subtract(2028, 659), divide(#0, 2028)",
+      "agent_answer": 0.6750493096646942,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.645
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.569
+        },
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.533
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 33,
+      "conversation_id": "Double_MAS/2012/page_92.pdf",
+      "turn_index": 0,
+      "question": "what was the difference in the company 2019s warranty liability between 2011 and 2012?",
+      "expected_program": "subtract(118, 102)",
+      "expected_answer": 16.0,
+      "agent_program": "subtract(118, 102)",
+      "agent_answer": 16.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 34,
+      "conversation_id": "Double_MAS/2012/page_92.pdf",
+      "turn_index": 1,
+      "question": "and the percentage change of this value?",
+      "expected_program": "subtract(118, 102), divide(#0, 102)",
+      "expected_answer": 0.15686,
+      "agent_program": "subtract(118, 102), divide(#0, 102)",
+      "agent_answer": 0.1568627450980392,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.622
+        },
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.582
+        },
+        {
+          "key": "74e1a09d-f66a-464d-9634-53537555d996",
+          "score": 0.574
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 35,
+      "conversation_id": "Single_HIG/2004/page_122.pdf-2",
+      "turn_index": 0,
+      "question": "what is the value of obligations due within 1 year?",
+      "expected_program": "27729",
+      "expected_answer": 27729.0,
+      "agent_program": "27729",
+      "agent_answer": 27729.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 36,
+      "conversation_id": "Single_HIG/2004/page_122.pdf-2",
+      "turn_index": 1,
+      "question": "what is the amount due between 1-3 years?",
+      "expected_program": "45161",
+      "expected_answer": 45161.0,
+      "agent_program": "45161",
+      "agent_answer": 45161.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 37,
+      "conversation_id": "Single_HIG/2004/page_122.pdf-2",
+      "turn_index": 2,
+      "question": "what is the sum?",
+      "expected_program": "add(27729, 45161)",
+      "expected_answer": 72890.0,
+      "agent_program": "add(27729, 45161)",
+      "agent_answer": 72890.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 38,
+      "conversation_id": "Single_HIG/2004/page_122.pdf-2",
+      "turn_index": 3,
+      "question": "what is the sum divided by total obligations due?",
+      "expected_program": "add(27729, 45161), divide(#0, 317105)",
+      "expected_answer": 0.22986,
+      "agent_program": null,
+      "agent_answer": null,
+      "correct": false,
+      "error": "ValueError('Step 0 not available')",
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 39,
+      "conversation_id": "Single_SLG/2013/page_133.pdf-4",
+      "turn_index": 0,
+      "question": "what was the total, in millions, capitalized to assets associated with compensation expense related to long-term compensation plans , restricted stock and stock options in the year of 2013?",
+      "expected_program": "4.5",
+      "expected_answer": 4.5,
+      "agent_program": "4.5",
+      "agent_answer": 4.5,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 40,
+      "conversation_id": "Single_SLG/2013/page_133.pdf-4",
+      "turn_index": 1,
+      "question": "and what was it in 2012, also in millions?",
+      "expected_program": "4.1",
+      "expected_answer": 4.1,
+      "agent_program": "4.1",
+      "agent_answer": 4.1,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 41,
+      "conversation_id": "Single_SLG/2013/page_133.pdf-4",
+      "turn_index": 2,
+      "question": "what was, then, in millions, the total sum that was capitalized in those two years?",
+      "expected_program": "add(4.5, 4.1)",
+      "expected_answer": 8.6,
+      "agent_program": "add(4.5, 4.1)",
+      "agent_answer": 8.6,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 42,
+      "conversation_id": "Single_SLG/2013/page_133.pdf-4",
+      "turn_index": 3,
+      "question": "including the year of 2011, what would then be the total sum capitalized in the three years, in millions?",
+      "expected_program": "add(4.5, 4.1), add(#0, 3.4)",
+      "expected_answer": 12.0,
+      "agent_program": "add(4.5, 4.1), add(#0, 3.4)",
+      "agent_answer": 12.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 43,
+      "conversation_id": "Double_AES/2016/page_98.pdf",
+      "turn_index": 0,
+      "question": "what was the total of foreign currency transaction gains ( losses ) for aes corporation in 2015, in millions?",
+      "expected_program": "-31",
+      "expected_answer": -31.0,
+      "agent_program": "-31",
+      "agent_answer": -31.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 44,
+      "conversation_id": "Double_AES/2016/page_98.pdf",
+      "turn_index": 1,
+      "question": "and what was it in 2014, also in millions?",
+      "expected_program": "-34",
+      "expected_answer": -34.0,
+      "agent_program": "-34",
+      "agent_answer": -34.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 45,
+      "conversation_id": "Double_AES/2016/page_98.pdf",
+      "turn_index": 2,
+      "question": "by how much, then, did that total change over the period?",
+      "expected_program": "subtract(-31, -34)",
+      "expected_answer": 3.0,
+      "agent_program": "subtract(-31, -34)",
+      "agent_answer": 3.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.591
+        },
+        {
+          "key": "0879fa8e-9170-4c13-adde-30248de27a2a",
+          "score": 0.519
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 46,
+      "conversation_id": "Double_AES/2016/page_98.pdf",
+      "turn_index": 3,
+      "question": "and what was that change over the subsequent year, from 2015 to 2016?",
+      "expected_program": "subtract(-50, -31)",
+      "expected_answer": -19.0,
+      "agent_program": "subtract(-15, 107)",
+      "agent_answer": -122.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.503
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 47,
+      "conversation_id": "Single_ETR/2008/page_336.pdf-3",
+      "turn_index": 0,
+      "question": "what is the difference between the net revenue of 2008 and 2007?",
+      "expected_program": "subtract(498.8, 486.9)",
+      "expected_answer": 11.9,
+      "agent_program": "subtract(498.8, 486.9)",
+      "agent_answer": 11.900000000000034,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 48,
+      "conversation_id": "Single_ETR/2008/page_336.pdf-3",
+      "turn_index": 1,
+      "question": "how much does that difference represents in relation to the net revenue of 2007?",
+      "expected_program": "subtract(498.8, 486.9), divide(#0, 486.9)",
+      "expected_answer": 0.02444,
+      "agent_program": "subtract(498.8, 486.9), divide(#0, 486.9)",
+      "agent_answer": 0.024440336824810095,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 49,
+      "conversation_id": "Single_BKR/2017/page_105.pdf-2",
+      "turn_index": 0,
+      "question": "what is the number of class b shares issued in 2017 times 1000?",
+      "expected_program": "multiply(1.25, const_1000)",
+      "expected_answer": 1250.0,
+      "agent_program": "706985",
+      "agent_answer": 706985.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 50,
+      "conversation_id": "Single_BKR/2017/page_105.pdf-2",
+      "turn_index": 1,
+      "question": "what is the total class b shares outstanding divided by that product?",
+      "expected_program": "multiply(1.25, const_1000), divide(707, #0)",
+      "expected_answer": 0.5656,
+      "agent_program": "divide(706985, 706985)",
+      "agent_answer": 1.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 51,
+      "conversation_id": "Double_AES/2011/page_230.pdf",
+      "turn_index": 0,
+      "question": "what is the total amount available under the committed credit facilities as of december 31, 2011, in billions?",
+      "expected_program": "add(1.4, 1.2)",
+      "expected_answer": 2.6,
+      "agent_program": "2.6",
+      "agent_answer": 2.6,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 52,
+      "conversation_id": "Double_AES/2011/page_230.pdf",
+      "turn_index": 1,
+      "question": "and as of that same date, how much did the non-recourse debt due in 2014 represent in relation to the total debt, in percentage?",
+      "expected_program": "divide(1697, 16088)",
+      "expected_answer": 0.10548,
+      "agent_program": "divide(1697, 16088), multiply(#0, 1)",
+      "agent_answer": 0.1054823470909995,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 53,
+      "conversation_id": "Single_JPM/2016/page_73.pdf-4",
+      "turn_index": 0,
+      "question": "what was the value of the kbw bank index in 2016?",
+      "expected_program": "258.82",
+      "expected_answer": 258.82,
+      "agent_program": "258.82",
+      "agent_answer": 258.82,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 54,
+      "conversation_id": "Single_JPM/2016/page_73.pdf-4",
+      "turn_index": 1,
+      "question": "and what was the change in value of the stock from 2011 to 2016?",
+      "expected_program": "subtract(258.82, const_100)",
+      "expected_answer": 158.82,
+      "agent_program": "subtract(298.31, 100)",
+      "agent_answer": 198.31,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "e58c3ea3-c10b-48e2-94ee-e37d8bed9382",
+          "score": 0.618
+        },
+        {
+          "key": "aea92e98-6e3a-4058-a7dc-f65722665ad6",
+          "score": 0.551
+        },
+        {
+          "key": "74e1a09d-f66a-464d-9634-53537555d996",
+          "score": 0.511
+        }
+      ],
+      "lesson_status": "skipped: unfixable"
+    },
+    {
+      "index": 55,
+      "conversation_id": "Single_JPM/2016/page_73.pdf-4",
+      "turn_index": 2,
+      "question": "how much does that change represent in relation to the original 2011 value?",
+      "expected_program": "subtract(258.82, const_100), divide(#0, const_100)",
+      "expected_answer": 1.5882,
+      "agent_program": "subtract(298.31, 100), divide(#0, 100)",
+      "agent_answer": 1.9831,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 56,
+      "conversation_id": "Double_ADBE/2018/page_66.pdf",
+      "turn_index": 0,
+      "question": "what was the weighted average useful life for trademarks?",
+      "expected_program": "9",
+      "expected_answer": 9.0,
+      "agent_program": "9",
+      "agent_answer": 9.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 57,
+      "conversation_id": "Double_ADBE/2018/page_66.pdf",
+      "turn_index": 1,
+      "question": "what was, then, the average annual amortization expense for that segment?",
+      "expected_program": "divide(const_100, 9)",
+      "expected_answer": 11.11111,
+      "agent_program": "divide(9, 9)",
+      "agent_answer": 1.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 58,
+      "conversation_id": "Double_ADBE/2018/page_66.pdf",
+      "turn_index": 2,
+      "question": "and what was it for the purchased technology one?",
+      "expected_program": "divide(const_100, 6)",
+      "expected_answer": 16.66667,
+      "agent_program": "6",
+      "agent_answer": 6.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 59,
+      "conversation_id": "Double_PNC/2014/page_99.pdf",
+      "turn_index": 0,
+      "question": "what is the impact of total net charge-offs in the balance of allowance for loan and lease losses during 2014?",
+      "expected_program": "531",
+      "expected_answer": 531.0,
+      "agent_program": "add(3609, -531), add(#0, 273), add(#1, -17), add(#2, -3)",
+      "agent_answer": 3331.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 60,
+      "conversation_id": "Double_PNC/2014/page_99.pdf",
+      "turn_index": 1,
+      "question": "what about the balance of allowance for loan and lease losses as of december 31, 2014?",
+      "expected_program": "3609",
+      "expected_answer": 3609.0,
+      "agent_program": "3331",
+      "agent_answer": 3331.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 61,
+      "conversation_id": "Double_PNC/2014/page_99.pdf",
+      "turn_index": 2,
+      "question": "what proportion is related to total net charge-offs?",
+      "expected_program": "divide(531, 3609)",
+      "expected_answer": 0.14713,
+      "agent_program": "divide(531, 3609)",
+      "agent_answer": 0.14713216957605985,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 62,
+      "conversation_id": "Double_PNC/2014/page_99.pdf",
+      "turn_index": 3,
+      "question": "what is the ratio of provision for credit losses in 2014 to 2013?",
+      "expected_program": "divide(273, 643)",
+      "expected_answer": 0.42457,
+      "agent_program": "divide(273, 643)",
+      "agent_answer": 0.42457231726283046,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 63,
+      "conversation_id": "Single_BLK/2017/page_35.pdf-4",
+      "turn_index": 0,
+      "question": "what is the net change in value of the balance of asset allocation from 2016 to 2017?",
+      "expected_program": "subtract(196545, 176675)",
+      "expected_answer": 19870.0,
+      "agent_program": "subtract(196545, 176675)",
+      "agent_answer": 19870.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "7e8f67ff-7b30-4b79-8aa1-5f6236d0d1fc",
+          "score": 0.536
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 64,
+      "conversation_id": "Single_BLK/2017/page_35.pdf-4",
+      "turn_index": 1,
+      "question": "what was the 2016 value?",
+      "expected_program": "176675",
+      "expected_answer": 176675.0,
+      "agent_program": "176675",
+      "agent_answer": 176675.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 65,
+      "conversation_id": "Single_BLK/2017/page_35.pdf-4",
+      "turn_index": 2,
+      "question": "what is the percent change?",
+      "expected_program": "subtract(196545, 176675), divide(#0, 176675)",
+      "expected_answer": 0.11247,
+      "agent_program": "subtract(196545, 176675), divide(#0, 176675)",
+      "agent_answer": 0.11246639309466534,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.669
+        },
+        {
+          "key": "8f67e7fd-ac92-439b-b290-aeca3b7ab329",
+          "score": 0.605
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.59
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 66,
+      "conversation_id": "Single_HII/2015/page_120.pdf-4",
+      "turn_index": 0,
+      "question": "what is the compensation expense the company recorded in 2015?",
+      "expected_program": "43",
+      "expected_answer": 43.0,
+      "agent_program": "43",
+      "agent_answer": 43.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 67,
+      "conversation_id": "Single_HII/2015/page_120.pdf-4",
+      "turn_index": 1,
+      "question": "what about in 2014?",
+      "expected_program": "34",
+      "expected_answer": 34.0,
+      "agent_program": "34",
+      "agent_answer": 34.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 68,
+      "conversation_id": "Single_HII/2015/page_120.pdf-4",
+      "turn_index": 2,
+      "question": "what is the total compensation expense the company recorded in 2015 and 2014?",
+      "expected_program": "add(43, 34)",
+      "expected_answer": 77.0,
+      "agent_program": "add(43, 34)",
+      "agent_answer": 77.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 69,
+      "conversation_id": "Single_HII/2015/page_120.pdf-4",
+      "turn_index": 3,
+      "question": "what is the total expenses including 2013?",
+      "expected_program": "add(43, 34), add(#0, 44)",
+      "expected_answer": 121.0,
+      "agent_program": "add(43, 34), add(#0, 44)",
+      "agent_answer": 121.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 70,
+      "conversation_id": "Single_HII/2015/page_120.pdf-4",
+      "turn_index": 4,
+      "question": "what is the average for three years?",
+      "expected_program": "add(43, 34), add(#0, 44), divide(#1, const_3)",
+      "expected_answer": 40.33333,
+      "agent_program": "add(43, 34), add(#0, 44), divide(#1, 3)",
+      "agent_answer": 40.333333333333336,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 71,
+      "conversation_id": "Single_AMT/2002/page_104.pdf-2",
+      "turn_index": 0,
+      "question": "what is the sum value of expected payments for principal of long-term debt in 2003 and 2004?",
+      "expected_program": "add(268496, 131262)",
+      "expected_answer": 399758.0,
+      "agent_program": "add(268496, 131262)",
+      "agent_answer": 399758.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 72,
+      "conversation_id": "Single_AMT/2002/page_104.pdf-2",
+      "turn_index": 1,
+      "question": "what is the total sum value including 2005?",
+      "expected_program": "add(268496, 131262), add(#0, 195082)",
+      "expected_answer": 594840.0,
+      "agent_program": "add(268496, 131262), add(#0, 195082)",
+      "agent_answer": 594840.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 73,
+      "conversation_id": "Single_VRTX/2005/page_103.pdf-1",
+      "turn_index": 0,
+      "question": "what was the net loss on disposal of assets in 2005?",
+      "expected_program": "344000",
+      "expected_answer": 344000.0,
+      "agent_program": "344000",
+      "agent_answer": 344000.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 74,
+      "conversation_id": "Single_VRTX/2005/page_103.pdf-1",
+      "turn_index": 1,
+      "question": "what was the value in 2004?",
+      "expected_program": "43000",
+      "expected_answer": 43000.0,
+      "agent_program": "43000",
+      "agent_answer": 43000.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 75,
+      "conversation_id": "Single_VRTX/2005/page_103.pdf-1",
+      "turn_index": 2,
+      "question": "what was the change in value?",
+      "expected_program": "subtract(344000, 43000)",
+      "expected_answer": 301000.0,
+      "agent_program": "subtract(344000, 43000)",
+      "agent_answer": 301000.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "0879fa8e-9170-4c13-adde-30248de27a2a",
+          "score": 0.521
+        },
+        {
+          "key": "2f862a04-aac5-4ce3-a595-63b741dbf928",
+          "score": 0.505
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 76,
+      "conversation_id": "Single_VRTX/2005/page_103.pdf-1",
+      "turn_index": 3,
+      "question": "what was the percent change?",
+      "expected_program": "subtract(344000, 43000), divide(#0, 43000)",
+      "expected_answer": 7.0,
+      "agent_program": "subtract(344000, 43000), divide(#0, 43000)",
+      "agent_answer": 7.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.645
+        },
+        {
+          "key": "8f67e7fd-ac92-439b-b290-aeca3b7ab329",
+          "score": 0.598
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.569
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 77,
+      "conversation_id": "Single_STT/2013/page_54.pdf-4",
+      "turn_index": 0,
+      "question": "what is the fraction change of the investment in s&p500 from 2008 to 2013?",
+      "expected_program": "divide(228, 100)",
+      "expected_answer": 2.28,
+      "agent_program": "subtract(228, 100), divide(#0, 100)",
+      "agent_answer": 1.28,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 78,
+      "conversation_id": "Single_STT/2013/page_54.pdf-4",
+      "turn_index": 1,
+      "question": "what is the initial value in 2008?",
+      "expected_program": "100",
+      "expected_answer": 100.0,
+      "agent_program": "100",
+      "agent_answer": 100.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 79,
+      "conversation_id": "Single_STT/2013/page_54.pdf-4",
+      "turn_index": 2,
+      "question": "what percentage change does this repreent?",
+      "expected_program": "divide(228, 100), divide(#0, 100)",
+      "expected_answer": 0.0228,
+      "agent_program": "1.28",
+      "agent_answer": 1.28,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.625
+        },
+        {
+          "key": "8f67e7fd-ac92-439b-b290-aeca3b7ab329",
+          "score": 0.532
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.517
+        }
+      ],
+      "lesson_status": "skipped: duplicate of rule-percent-as-decimal"
+    },
+    {
+      "index": 80,
+      "conversation_id": "Single_GS/2014/page_62.pdf-2",
+      "turn_index": 0,
+      "question": "what is the net change in standardized rwas from 2013 to 2014?",
+      "expected_program": "subtract(627444, 635092)",
+      "expected_answer": -7648.0,
+      "agent_program": "subtract(627444, 635092)",
+      "agent_answer": -7648.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 81,
+      "conversation_id": "Single_GS/2014/page_62.pdf-2",
+      "turn_index": 1,
+      "question": "what is the balance of standardized rwas in 2013?",
+      "expected_program": "635092",
+      "expected_answer": 635092.0,
+      "agent_program": "635092",
+      "agent_answer": 635092.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 82,
+      "conversation_id": "Single_GS/2014/page_62.pdf-2",
+      "turn_index": 2,
+      "question": "what percentage change does this represent?",
+      "expected_program": "subtract(627444, 635092), divide(#0, 635092)",
+      "expected_answer": -0.01204,
+      "agent_program": "subtract(627444, 635092), divide(#0, 635092)",
+      "agent_answer": -0.012042349769797131,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.626
+        },
+        {
+          "key": "8f67e7fd-ac92-439b-b290-aeca3b7ab329",
+          "score": 0.567
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.545
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 83,
+      "conversation_id": "Double_GPN/2018/page_85.pdf",
+      "turn_index": 0,
+      "question": "what was the total of annual payments for 2024 and thereafter?",
+      "expected_program": "475000",
+      "expected_answer": 475000.0,
+      "agent_program": "475000",
+      "agent_answer": 475000.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 84,
+      "conversation_id": "Double_GPN/2018/page_85.pdf",
+      "turn_index": 1,
+      "question": "and what was it for 2019?",
+      "expected_program": "124176",
+      "expected_answer": 124176.0,
+      "agent_program": "124176",
+      "agent_answer": 124176.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 85,
+      "conversation_id": "Double_GPN/2018/page_85.pdf",
+      "turn_index": 2,
+      "question": "by how much, then, did it increase over those years?",
+      "expected_program": "subtract(475000, 124176)",
+      "expected_answer": 350824.0,
+      "agent_program": "subtract(475000, 124176)",
+      "agent_answer": 350824.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 86,
+      "conversation_id": "Double_GPN/2018/page_85.pdf",
+      "turn_index": 3,
+      "question": "and as of december 31 of the previous year of this period, what was the amount of the term loan provided ( the 201cterm a loan 201d ), in millions?",
+      "expected_program": "multiply(1.5, const_1000)",
+      "expected_answer": 1500.0,
+      "agent_program": "1500",
+      "agent_answer": 1500.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 87,
+      "conversation_id": "Double_GPN/2018/page_85.pdf",
+      "turn_index": 4,
+      "question": "and what was the annual interest expense incurred from this loan?",
+      "expected_program": "multiply(1.5, const_1000), multiply(#0, 4.02%)",
+      "expected_answer": 60.3,
+      "agent_program": "multiply(1500000000, 0.0402)",
+      "agent_answer": 60300000.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "a8364419-2581-4778-892f-946cc64d3e7c",
+          "score": 0.505
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 88,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 0,
+      "question": "what is the value of an investment in edwards lifesciences in 2016?",
+      "expected_program": "265.06",
+      "expected_answer": 265.06,
+      "agent_program": "265.06",
+      "agent_answer": 265.06,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 89,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 1,
+      "question": "what is the net change from the initial investment?",
+      "expected_program": "subtract(265.06, const_100)",
+      "expected_answer": 165.06,
+      "agent_program": "subtract(265.06, 100)",
+      "agent_answer": 165.06,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "f3387d19-194c-4a18-9f26-b0ec9655306a",
+          "score": 0.571
+        },
+        {
+          "key": "7e8f67ff-7b30-4b79-8aa1-5f6236d0d1fc",
+          "score": 0.547
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 90,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 2,
+      "question": "what rate of cumulative return does this represent?",
+      "expected_program": "subtract(265.06, const_100), divide(#0, const_100)",
+      "expected_answer": 1.6506,
+      "agent_program": "subtract(265.06, 100), divide(#0, 100)",
+      "agent_answer": 1.6506,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 91,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 3,
+      "question": "what about the value if the investment in s&p500 in 2016?",
+      "expected_program": "198.18",
+      "expected_answer": 198.18,
+      "agent_program": "198.18",
+      "agent_answer": 198.18,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 92,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 4,
+      "question": "what is the net change from the initial investment?",
+      "expected_program": "subtract(265.06, const_100), divide(#0, const_100), subtract(198.18, const_100)",
+      "expected_answer": 98.18,
+      "agent_program": "165.06",
+      "agent_answer": 165.06,
+      "correct": false,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "f3387d19-194c-4a18-9f26-b0ec9655306a",
+          "score": 0.571
+        },
+        {
+          "key": "7e8f67ff-7b30-4b79-8aa1-5f6236d0d1fc",
+          "score": 0.547
+        }
+      ],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 93,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 5,
+      "question": "what rate of cumulative return does this represent?",
+      "expected_program": "subtract(265.06, const_100), divide(#0, const_100), subtract(198.18, const_100), divide(#2, const_100)",
+      "expected_answer": 0.9818,
+      "agent_program": "subtract(198.18, 100), divide(#0, 100)",
+      "agent_answer": 0.9818000000000001,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 94,
+      "conversation_id": "Double_EW/2016/page_36.pdf",
+      "turn_index": 6,
+      "question": "what is the difference in returns between s&p500 and edwards lifesciences for this period?",
+      "expected_program": "subtract(265.06, const_100), divide(#0, const_100), subtract(198.18, const_100), divide(#2, const_100), subtract(#1, #3)",
+      "expected_answer": 0.6688,
+      "agent_program": "subtract(265.06, 198.18)",
+      "agent_answer": 66.88,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 95,
+      "conversation_id": "Single_ADI/2009/page_90.pdf-3",
+      "turn_index": 0,
+      "question": "what was the net change in the value of the balance from 2007 to 2009?",
+      "expected_program": "subtract(18161, 9889)",
+      "expected_answer": 8272.0,
+      "agent_program": "subtract(18161, 9889)",
+      "agent_answer": 8272.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "81c26e98-fe22-4319-a83e-8428c58683fe",
+          "score": 0.545
+        },
+        {
+          "key": "7e8f67ff-7b30-4b79-8aa1-5f6236d0d1fc",
+          "score": 0.52
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 96,
+      "conversation_id": "Single_ADI/2009/page_90.pdf-3",
+      "turn_index": 1,
+      "question": "what was the 2009 value?",
+      "expected_program": "9889",
+      "expected_answer": 9889.0,
+      "agent_program": "18161",
+      "agent_answer": 18161.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 97,
+      "conversation_id": "Single_ADI/2009/page_90.pdf-3",
+      "turn_index": 2,
+      "question": "what is the percent change?",
+      "expected_program": "subtract(18161, 9889), divide(#0, 9889)",
+      "expected_answer": 0.83648,
+      "agent_program": "subtract(18161, 9889), divide(#0, 9889)",
+      "agent_answer": 0.8364849833147943,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.669
+        },
+        {
+          "key": "8f67e7fd-ac92-439b-b290-aeca3b7ab329",
+          "score": 0.605
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.59
+        }
+      ],
+      "lesson_status": null
+    },
+    {
+      "index": 98,
+      "conversation_id": "Single_AON/2007/page_185.pdf-4",
+      "turn_index": 0,
+      "question": "what is the difference in value of future minimum rent payments from 2008 to 2009?",
+      "expected_program": "subtract(275, 317)",
+      "expected_answer": -42.0,
+      "agent_program": "subtract(317, 275)",
+      "agent_answer": 42.0,
+      "correct": false,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": "saved"
+    },
+    {
+      "index": 99,
+      "conversation_id": "Single_AON/2007/page_185.pdf-4",
+      "turn_index": 1,
+      "question": "what is the value of future minimum rent payments in 2008?",
+      "expected_program": "317",
+      "expected_answer": 317.0,
+      "agent_program": "317",
+      "agent_answer": 317.0,
+      "correct": true,
+      "error": null,
+      "lessons_used": [],
+      "lesson_status": null
+    },
+    {
+      "index": 100,
+      "conversation_id": "Single_AON/2007/page_185.pdf-4",
+      "turn_index": 2,
+      "question": "what is the percent change?",
+      "expected_program": "subtract(275, 317), divide(#0, 317)",
+      "expected_answer": -0.13249,
+      "agent_program": "subtract(275, 317), divide(#0, 317)",
+      "agent_answer": -0.13249211356466878,
+      "correct": true,
+      "error": null,
+      "lessons_used": [
+        {
+          "key": "rule-percent-as-decimal",
+          "score": 0.669
+        },
+        {
+          "key": "8f67e7fd-ac92-439b-b290-aeca3b7ab329",
+          "score": 0.605
+        },
+        {
+          "key": "4909d177-2e98-41f3-9d24-b6107aa75530",
+          "score": 0.59
+        }
+      ],
+      "lesson_status": null
+    }
+  ]
+}
